@@ -1,4 +1,4 @@
-import React from 'react';
+// Componente sobre
 
 const About = () => {
   return (
@@ -11,8 +11,9 @@ const About = () => {
         <div className="bg-gray-900/50 rounded-2xl p-8 md:p-12 border border-gray-800">
           <p className="text-lg md:text-xl leading-relaxed text-gray-300 space-y-6">
             <span className="block">
-              Sou desenvolvedor full stack sênior com quase 30 anos de estrada. Atualmente atuo 
-              para a Petrobras via Universidade Federal de Alagoas (UFAL), desenvolvendo sistemas 
+              Sou desenvolvedor full stack sênior com quase 30 anos de experiência. Atualmente,
+              dentre outros Projetos, desenvolvo e entrego o Futuro para a Petrobras via 
+              Universidade Federal de Alagoas (UFAL), desenvolvendo sistemas 
               em Java com Spring Boot. Ao longo da minha carreira, atuei com projetos robustos 
               em PHP (Laravel, Lumen, Zend, CakePHP), Python, Node.js, frontend com React, Vue 
               e Angular, bancos relacionais e não relacionais, DevOps com Docker, CI/CD, AWS e 

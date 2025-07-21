@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -20,19 +20,27 @@ const Header = () => {
           : 'bg-transparent'
       }`}
     >
-      <div className="max-w-6xl mx-auto px-6 py-4">
+      <div className="max-w-6xl mx-auto px-6 py-0">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <img 
-              src="/image.png" 
-              alt="Mr.Goose Logo" 
-              className="h-10 w-auto"
-            />
+            <a href="#" className="flex items-center">
+              <img 
+                src="/image.png" 
+                alt="Mr.Goose Logo" 
+                className="h-[70px] w-auto"
+              />
+            </a>
           </div>
 
           {/* Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
+            <a 
+              href="#" 
+              className="text-gray-300 hover:text-white transition-colors duration-200 font-medium"
+            >
+              Início
+            </a>
             <a 
               href="#about" 
               className="text-gray-300 hover:text-white transition-colors duration-200 font-medium"

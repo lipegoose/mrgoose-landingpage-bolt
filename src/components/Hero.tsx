@@ -1,4 +1,4 @@
-import React from 'react';
+// Componente principal da página
 import { MessageCircle, Linkedin } from 'lucide-react';
 
 const Hero = () => {
@@ -16,7 +16,7 @@ const Hero = () => {
 
         {/* Subtitle */}
         <p className="text-lg md:text-xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed">
-          Atualmente atuando para a Petrobras, com quase 30 anos de experiência 
+          São quase 30 anos de experiência 
           desenvolvendo sistemas robustos, escaláveis e personalizados.
         </p>
 
@@ -49,11 +49,13 @@ const Hero = () => {
         </p>
       </div>
 
-      {/* Scroll indicator */}
+      {/* Logo centralizada */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-gray-400 rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-gray-400 rounded-full mt-2"></div>
-        </div>
+        <img 
+          src="/image.png" 
+          alt="Mr.Goose Logo" 
+          className="h-[188px] w-auto"
+        />
       </div>
     </section>
   );
