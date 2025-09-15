@@ -64,11 +64,11 @@ const Hero = () => {
       </div>
 
       {/* Logo centralizada */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 group">
         <img 
           src="/image.png" 
           alt="Mr.Goose Logo" 
-          className="h-[188px] w-auto hover:animate-pulse transition-all duration-300"
+          className="h-[188px] w-auto hover:scale-110 hover:rotate-3 transition-all duration-700 hover:drop-shadow-2xl hover:brightness-110"
         />
       </div>
     </section>
