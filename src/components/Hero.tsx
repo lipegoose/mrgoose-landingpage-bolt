@@ -1,5 +1,5 @@
 // Componente principal da página
-import { MessageCircle, Linkedin } from 'lucide-react';
+import { MessageCircle, Linkedin, Download } from 'lucide-react';
 
 const Hero = () => {
   return (
@@ -21,7 +21,7 @@ const Hero = () => {
         </p>
 
         {/* Action buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
           <a
             href="https://wa.me/5512997902911"
             target="_blank"
@@ -40,6 +40,19 @@ const Hero = () => {
           >
             <Linkedin className="w-5 h-5 mr-3" />
             Ver LinkedIn
+          </a>
+        </div>
+
+        {/* Resume download button */}
+        <div className="flex justify-center mb-12">
+          <a
+            href="https://docs.google.com/document/d/1YYA86u0znM9H7E6EsyzuxjeZ2HiqePUA_VB4dGGx_sw/edit?tab=t.0"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center px-6 py-3 bg-gray-800/50 border border-gray-700 text-gray-300 font-medium rounded-lg hover:bg-gray-700 hover:text-white hover:border-gray-600 transition-all duration-300 transform hover:scale-105"
+          >
+            <Download className="w-4 h-4 mr-2" />
+            Baixar Currículo
           </a>
         </div>
 

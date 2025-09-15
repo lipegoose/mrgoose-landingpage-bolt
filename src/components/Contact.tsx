@@ -1,5 +1,5 @@
 import React from 'react';
-import { MessageCircle, Linkedin } from 'lucide-react';
+import { MessageCircle, Linkedin, Download } from 'lucide-react';
 
 const Contact = () => {
   return (
@@ -15,7 +15,7 @@ const Contact = () => {
           direto pelo WhatsApp ou pelo LinkedIn.
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-8">
+        <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-6">
           <a
             href="https://wa.me/5512997902911"
             target="_blank"
@@ -34,6 +34,19 @@ const Contact = () => {
           >
             <Linkedin className="w-5 h-5 mr-3" />
             LinkedIn
+          </a>
+        </div>
+
+        {/* Resume download section */}
+        <div className="flex justify-center mb-8">
+          <a
+            href="https://docs.google.com/document/d/1YYA86u0znM9H7E6EsyzuxjeZ2HiqePUA_VB4dGGx_sw/edit?tab=t.0"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center px-6 py-3 bg-transparent border border-[#FF914D]/30 text-[#FF914D] font-medium rounded-lg hover:bg-[#FF914D]/10 hover:border-[#FF914D]/50 transition-all duration-300 transform hover:scale-105"
+          >
+            <Download className="w-4 h-4 mr-2" />
+            Baixar Currículo Completo
           </a>
         </div>
 
