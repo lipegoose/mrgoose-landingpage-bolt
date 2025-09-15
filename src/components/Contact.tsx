@@ -43,9 +43,10 @@ const Contact = () => {
             href="https://docs.google.com/document/d/1YYA86u0znM9H7E6EsyzuxjeZ2HiqePUA_VB4dGGx_sw/edit?tab=t.0"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center px-6 py-3 bg-transparent border border-[#FF914D]/30 text-[#FF914D] font-medium rounded-lg hover:bg-[#FF914D]/10 hover:border-[#FF914D]/50 transition-all duration-300 transform hover:scale-105"
+            className="group inline-flex items-center px-6 py-3 bg-transparent border border-[#FF914D]/30 text-[#FF914D] font-medium rounded-lg hover:bg-[#FF914D]/10 hover:border-[#FF914D]/50 transition-all duration-500 relative overflow-hidden"
           >
-            <Download className="w-4 h-4 mr-2" />
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#FF914D]/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+            <Download className="w-4 h-4 mr-2 group-hover:animate-pulse group-hover:-translate-y-0.5 transition-all duration-300" />
             Baixar Currículo Completo
           </a>
         </div>

@@ -49,9 +49,10 @@ const Hero = () => {
             href="https://docs.google.com/document/d/1YYA86u0znM9H7E6EsyzuxjeZ2HiqePUA_VB4dGGx_sw/edit?tab=t.0"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center px-6 py-3 bg-gray-800/50 border border-gray-700 text-gray-300 font-medium rounded-lg hover:bg-gray-700 hover:text-white hover:border-gray-600 transition-all duration-300 transform hover:scale-105"
+            className="group inline-flex items-center px-6 py-3 bg-gray-800/50 border border-gray-700 text-gray-300 font-medium rounded-lg hover:bg-gray-700 hover:text-white hover:border-gray-600 transition-all duration-500 relative overflow-hidden"
           >
-            <Download className="w-4 h-4 mr-2" />
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+            <Download className="w-4 h-4 mr-2 group-hover:rotate-12 transition-transform duration-300" />
             Baixar Currículo
           </a>
         </div>
@@ -67,7 +68,7 @@ const Hero = () => {
         <img 
           src="/image.png" 
           alt="Mr.Goose Logo" 
-          className="h-[188px] w-auto"
+          className="h-[188px] w-auto hover:animate-pulse transition-all duration-300"
         />
       </div>
     </section>
