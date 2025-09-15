@@ -64,7 +64,7 @@ const Hero = () => {
       </div>
 
       {/* Logo centralizada */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 group">
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 group -z-10">
         <img 
           src="/image.png" 
           alt="Mr.Goose Logo" 
