@@ -3,8 +3,8 @@ import { MessageCircle, Linkedin, Download } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center relative px-6">
-      <div className="max-w-4xl mx-auto text-center">
+    <section className="min-h-screen flex flex-col items-center justify-center relative px-6 pt-24 md:pt-0">
+      <div className="max-w-4xl mx-auto text-center mb-8">
         {/* Main heading */}
         <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
           Felipe Machado Goose
@@ -63,8 +63,17 @@ const Hero = () => {
         </p>
       </div>
 
-      {/* Logo centralizada */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 group">
+      {/* Logo para mobile - posicionada abaixo do texto */}
+      <div className="md:hidden block mt-4 mb-8">
+        <img 
+          src="/image.png" 
+          alt="Mr.Goose Logo" 
+          className="h-[150px] w-auto mx-auto hover:scale-110 hover:rotate-3 transition-all duration-700 hover:drop-shadow-2xl hover:brightness-110"
+        />
+      </div>
+
+      {/* Logo centralizada - apenas para desktop/tablet */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 group md:block hidden">
         <img 
           src="/image.png" 
           alt="Mr.Goose Logo" 
